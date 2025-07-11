@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Personal Blog</title>
+  <title>Maiyo's Blog</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
     header { background: #333; color: white; text-align: center; padding: 2rem 1rem; }
@@ -15,6 +16,9 @@
     h1, h2 { color: #222; }
     .post { margin-bottom: 2rem; }
     footer { background: #333; color: white; text-align: center; padding: 1rem 0; margin-top: 2rem; }
+    form input, form textarea { width: 100%; padding: 10px; margin-top: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 4px; }
+    form button { padding: 10px 20px; background: #333; color: white; border: none; cursor: pointer; }
+    form button:hover { background: #555; }
   </style>
 </head>
 <body>
@@ -32,26 +36,38 @@
 
   <div class="container" id="about">
     <h2>About Me</h2>
-    <p>Hi! I'm Maiyo, and this is my personal blog. I'm just getting started with blogging and sharing my ideas. Stay tuned for more updates!</p>
+    <p>Hi! I'm Maiyo, and this is my personal blog. I share my thoughts and updates here — more coming soon!</p>
   </div>
 
   <div class="container" id="posts">
     <h2>Recent Posts</h2>
+
     <div class="post">
-      <h3>Why I Started This Blog</h3>
+      <h3>📘 Why I Started This Blog</h3>
       <p><em>Posted on July 11, 2025</em></p>
-      <p>I created this blog as a space to explore my thoughts and track my personal growth. This is just the beginning!</p>
+      <p>I created this blog to explore ideas and document personal growth. It's the beginning of a journey!</p>
     </div>
+
     <div class="post">
-      <h3>My Current Interests</h3>
+      <h3>💡 My Current Interests</h3>
       <p><em>Posted on July 10, 2025</em></p>
-      <p>Right now, I'm learning more about tech, creativity, and staying consistent. I’ll be sharing what I learn along the way.</p>
+      <p>I'm diving into tech, writing, and productivity — stay tuned for my discoveries and tips!</p>
     </div>
+
   </div>
 
   <div class="container" id="contact">
-    <h2>Contact</h2>
-    <p>If you'd like to reach out, just drop a message in the future contact form. 😊</p>
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mayovgop" method="POST">
+      <label>Your Name</label>
+      <input type="text" name="name" required>
+      <label>Your Email</label>
+      <input type="email" name="email" required>
+      <label>Your Message</label>
+      <textarea name="message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="font-size: 0.9rem; color: #666;">This form uses <a href="https://formspree.io" target="_blank">Formspree</a>.</p>
   </div>
 
   <footer>
